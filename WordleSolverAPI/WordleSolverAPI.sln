@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleSolverAPI", "WordleSolverAPI\WordleSolverAPI.csproj", "{3ACEE648-6D36-4ECE-829A-7CEBA52D060F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordleSolverAPI", "WordleSolverAPI\WordleSolverAPI.csproj", "{3ACEE648-6D36-4ECE-829A-7CEBA52D060F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleSolverService", "WordleSolverService\WordleSolverService.csproj", "{EF04562A-982C-4829-B99D-B040C96BB784}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3ACEE648-6D36-4ECE-829A-7CEBA52D060F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ACEE648-6D36-4ECE-829A-7CEBA52D060F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ACEE648-6D36-4ECE-829A-7CEBA52D060F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF04562A-982C-4829-B99D-B040C96BB784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF04562A-982C-4829-B99D-B040C96BB784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF04562A-982C-4829-B99D-B040C96BB784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF04562A-982C-4829-B99D-B040C96BB784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

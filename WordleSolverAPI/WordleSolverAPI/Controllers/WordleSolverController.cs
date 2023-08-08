@@ -1,6 +1,7 @@
 ﻿namespace WordleSolverAPI.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
+    using WordleSolverService.API;
 
     [ApiController]
     [Route("api/wordleSolver")]
@@ -16,7 +17,8 @@
         [HttpGet("Solve")]
         public string Solve()
         {
-            return "Hello";
+            WordleSolver hello = new WordleSolver();
+            return hello.SolveWordle();
         }
         
     }
