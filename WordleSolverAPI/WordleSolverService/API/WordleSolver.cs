@@ -5,31 +5,32 @@
         public List<string> SolveWordle(string word, List<char> usedLetters)
         {
             //FRIES
-            var dummyWord = "F_I_S";
+            var dummyWord = "f_i_s";
             var dummyUsedLetters = new List<char>
             {
                 'd',
-                'f',
                 'k',
-                'a'
+                'a',
             };
 
+            var result = new List<string>();
+
             var listOfWords = sortUsedLetters(dummyUsedLetters, this.readTextFile());
+            int i = 0;
 
-            foreach (var letter in dummyWord.Split(""))
+            foreach (var letter in dummyWord.ToCharArray())
             {
-                int i = 0;
-
-                if(letter == "_")
+                if(letter.ToString() == "_")
                 {
+                    i++;
                     continue;
                 }
-                listOfWords.Find(x => x.Split("")[i] == letter);
+                result = listOfWords.Where(x => x.ToCharArray()[i] == letter).ToList();
+                listOfWords = result;
                 i++;
             }
 
-
-            return new List<string> { "hello"};
+            return result;
         }
 
 
