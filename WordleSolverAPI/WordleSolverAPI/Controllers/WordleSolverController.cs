@@ -8,17 +8,18 @@
     public class WordleSolverController
     {
         private readonly ILogger<WordleSolverController> _logger;
+        public IWordleSolver _wordleSolver;
 
-        public WordleSolverController(ILogger<WordleSolverController> logger)
+        public WordleSolverController(ILogger<WordleSolverController> logger, IWordleSolver wordleSolver)
         {
             _logger = logger;
+            _wordleSolver = wordleSolver;
         }
 
         [HttpGet("Solve")]
         public string Solve()
         {
-            WordleSolver hello = new WordleSolver();
-            return hello.SolveWordle();
+            return _wordleSolver.SolveWordle();
         }
         
     }

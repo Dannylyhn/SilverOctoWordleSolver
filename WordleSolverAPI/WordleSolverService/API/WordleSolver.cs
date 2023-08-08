@@ -1,6 +1,6 @@
 ﻿namespace WordleSolverService.API
 {
-    public class WordleSolver
+    public class WordleSolver : IWordleSolver
     {
         public string SolveWordle()
         {
