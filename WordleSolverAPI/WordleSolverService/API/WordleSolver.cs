@@ -4,12 +4,47 @@
     {
         public List<string> SolveWordle(string word, List<char> usedLetters)
         {
-            var listOfWords = this.readTextFile();
+            //FRIES
+            var dummyWord = "F_I_S";
+            var dummyUsedLetters = new List<char>
+            {
+                'd',
+                'f',
+                'k'
+            };
+
+            var listOfWords = sortUsedLetters(dummyUsedLetters, this.readTextFile());
+
+            foreach (var letter in dummyWord.Split(""))
+            {
+                int i = 0;
+
+                if(letter == "_")
+                {
+                    continue;
+                }
+                listOfWords.Find(x => x.Split("")[i] == letter);
+                i++;
+            }
+
 
             return new List<string> { "hello"};
         }
 
-        public List<string> readTextFile()
+
+        private List<string> sortUsedLetters(List<char> usedLetters, List<string> listOfWords)
+        {
+            foreach(var letter in usedLetters)
+            {
+
+            }
+
+
+
+            return new List<string>();
+        }
+
+        private List<string> readTextFile()
         {
             var listOfWords = new List<string>();
             try
