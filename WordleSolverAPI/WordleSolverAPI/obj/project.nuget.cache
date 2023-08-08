@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "udm5jetfO/Wo5+Ku6cV/GDARuqOCGkh/ZrXTk81086FhL2BdYNZ9RmeWXq1tm3NBPgU9G6B7W0JKnw0YUPtXJQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Danny Ly\\githubprojects\\SilverOctuWordleSolver\\WordleSolverAPI\\WordleSolverAPI\\WordleSolverAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Danny Ly\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Danny Ly\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Danny Ly\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
+    "C:\\Users\\Danny Ly\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\Danny Ly\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Danny Ly\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Danny Ly\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
