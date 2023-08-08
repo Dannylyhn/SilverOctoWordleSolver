@@ -21,6 +21,7 @@
         public List<string> solve(SolverRequest request)
         {
             List<char> testing = new List<char>();
+
             return _wordleSolver.SolveWordle("H_LLO", testing);
         }
         
