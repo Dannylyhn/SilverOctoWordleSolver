@@ -10,7 +10,8 @@
             {
                 'd',
                 'f',
-                'k'
+                'k',
+                'a'
             };
 
             var listOfWords = sortUsedLetters(dummyUsedLetters, this.readTextFile());
@@ -34,14 +35,17 @@
 
         private List<string> sortUsedLetters(List<char> usedLetters, List<string> listOfWords)
         {
+            var result = new List<string>();
+            var list = new List<string>();
+
             foreach(var letter in usedLetters)
             {
-
+                list = listOfWords.Where(x => !x.Contains(letter.ToString())).ToList();
+                listOfWords = list;
             }
 
-
-
-            return new List<string>();
+            result.AddRange(list);
+            return result;
         }
 
         private List<string> readTextFile()
