@@ -2,16 +2,16 @@
 {
     public class WordleSolver : IWordleSolver
     {
-        public string SolveWordle()
+        public List<string> SolveWordle(string word, List<char> usedLetters)
         {
-            this.readTextFile();
-            return "It is solved";
+            var listOfWords = this.readTextFile();
+
+            return new List<string> { "hello"};
         }
 
         public List<string> readTextFile()
         {
             var listOfWords = new List<string>();
-
             try
             {
                 // Open the text file using a stream reader.
@@ -20,8 +20,10 @@
                     while (!sr.EndOfStream)
                     {
                         string word = sr.ReadLine();
-                        listOfWords.Add(word);
-                        
+                        if(word != null)
+                        {
+                            listOfWords.Add(word);
+                        }
                     }
                 }
             }

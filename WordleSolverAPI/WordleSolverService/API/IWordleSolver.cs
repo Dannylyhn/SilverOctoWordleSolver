@@ -8,6 +8,6 @@ namespace WordleSolverService.API
 {
     public interface IWordleSolver
     {
-        public string SolveWordle();
+        public List<string> SolveWordle(string word, List<char> usedLetters);
     }
 }

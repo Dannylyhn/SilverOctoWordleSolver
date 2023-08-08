@@ -1,6 +1,7 @@
 ﻿namespace WordleSolverAPI.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
+    using WordleSolverAPI.Models.Requests;
     using WordleSolverService.API;
 
     [ApiController]
@@ -16,10 +17,11 @@
             _wordleSolver = wordleSolver;
         }
 
-        [HttpGet("Solve")]
-        public string Solve()
+        [HttpPost("solve")]
+        public List<string> solve(SolverRequest request)
         {
-            return _wordleSolver.SolveWordle();
+            List<char> testing = new List<char>();
+            return _wordleSolver.SolveWordle("H_LLO", testing);
         }
         
     }
