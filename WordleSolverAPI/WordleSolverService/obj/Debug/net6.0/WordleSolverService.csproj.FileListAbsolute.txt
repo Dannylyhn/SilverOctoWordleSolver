@@ -1,7 +1,6 @@
 C:\Users\Danny Ly\githubprojects\SilverOctoWordleSolver\WordleSolverAPI\WordleSolverService\bin\Debug\net6.0\WordleSolverService.deps.json
 C:\Users\Danny Ly\githubprojects\SilverOctoWordleSolver\WordleSolverAPI\WordleSolverService\bin\Debug\net6.0\WordleSolverService.dll
 C:\Users\Danny Ly\githubprojects\SilverOctoWordleSolver\WordleSolverAPI\WordleSolverService\bin\Debug\net6.0\WordleSolverService.pdb
-C:\Users\Danny Ly\githubprojects\SilverOctoWordleSolver\WordleSolverAPI\WordleSolverService\obj\Debug\net6.0\WordleSolverService.csproj.AssemblyReference.cache
 C:\Users\Danny Ly\githubprojects\SilverOctoWordleSolver\WordleSolverAPI\WordleSolverService\obj\Debug\net6.0\WordleSolverService.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Danny Ly\githubprojects\SilverOctoWordleSolver\WordleSolverAPI\WordleSolverService\obj\Debug\net6.0\WordleSolverService.AssemblyInfoInputs.cache
 C:\Users\Danny Ly\githubprojects\SilverOctoWordleSolver\WordleSolverAPI\WordleSolverService\obj\Debug\net6.0\WordleSolverService.AssemblyInfo.cs

@@ -22,7 +22,7 @@
         {
             List<char> testing = new List<char>();
 
-            return _wordleSolver.SolveWordle("H_LLO", testing);
+            return _wordleSolver.SolveWordle("H_LLO", testing, testing);
         }
         
     }
