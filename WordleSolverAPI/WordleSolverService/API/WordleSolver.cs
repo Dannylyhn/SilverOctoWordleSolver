@@ -2,20 +2,36 @@
 {
     public class WordleSolver : IWordleSolver
     {
-        public List<string> SolveWordle(string word, List<char> usedLetters)
+        public List<string> SolveWordle(string word, List<char> invalidLetters, List<char> validLetters)
         {
             //FRIES
-            var dummyWord = "f_i_s";
-            var dummyUsedLetters = new List<char>
+            var dummyWord = "lo_er";
+            var dummyInvalidLetters = new List<char>
             {
-                'd',
-                'k',
-                'a',
+                'f',
+                'i',
+                's',
+                'b',
+                'n',
+                'w'
             };
+
+            var dummyValidLetters = new List<char>
+            {
+                'l',
+                'o',
+                'e',
+                'r',
+                
+            };
+
 
             var result = new List<string>();
 
-            var listOfWords = sortUsedLetters(dummyUsedLetters, this.readTextFile());
+            var listOfWords = sortInvalidWords(dummyInvalidLetters, this.readTextFile());
+
+            listOfWords = sortValidWords(dummyValidLetters, listOfWords);
+
             int i = 0;
 
             foreach (var letter in dummyWord.ToCharArray())
@@ -34,7 +50,22 @@
         }
 
 
-        private List<string> sortUsedLetters(List<char> usedLetters, List<string> listOfWords)
+        private List<string> sortValidWords(List<char> validLetters, List<string> listOfWords)
+        {
+            var result = new List<string>();
+            var list = new List<string>();
+
+            foreach (var letter in validLetters)
+            {
+                list = listOfWords.Where(x => x.Contains(letter.ToString())).ToList();
+                listOfWords = list;
+            }
+
+            result.AddRange(list);
+            return result;
+        }
+
+        private List<string> sortInvalidWords(List<char> usedLetters, List<string> listOfWords)
         {
             var result = new List<string>();
             var list = new List<string>();
